@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="Default Web Site/" />
+  <setParameter name="DefaultConnection-Web.config Connection String" value="Data Source=aa9cnup2znmrfz.cf6kk4mvo2so.eu-central-1.rds.amazonaws.com,1433;Initial Catalog=SimpleWebApp;Integrated Security=False;Persist Security Info=True;User ID=SimpleWebApp;Password=MojaShifra" />
+</parameters>
