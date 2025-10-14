@@ -60,6 +60,7 @@ public class Teacher
     public string FullName { get; set; } = string.Empty;
     public string Subject { get; set; } = string.Empty;
     public DateTime HireDate { get; set; }
+    public string HomeAddress { get; set; } = string.Empty;
 }
 ```
 
@@ -71,6 +72,7 @@ public class Teacher
 | **FullName** | `string` | Full name of the teacher (e.g., "Lejla Kovačević"). |
 | **Subject** | `string` | Subject or specialization taught (e.g., "Mathematics"). |
 | **HireDate** | `DateTime` | Date when the teacher was officially hired. |
+| **HomeAddress** | `string` | Teacher residential address. Stored as plain string. Consider privacy/data-protection implications before capturing or displaying. |
 
 #### Example JSON
 ```json
@@ -78,7 +80,8 @@ public class Teacher
   "Id": 11,
   "FullName": "Lejla Kovačević",
   "Subject": "Mathematics",
-  "HireDate": "2021-08-15T00:00:00"
+  "HireDate": "2021-08-15T00:00:00",
+  "HomeAddress": ""
 }
 ```
 
@@ -106,6 +109,7 @@ erDiagram
         string FullName
         string Subject
         datetime HireDate
+        string HomeAddress
     }
 
     TEACHER ||--o{ STUDENT : "teaches"
